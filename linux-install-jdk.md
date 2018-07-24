@@ -27,11 +27,17 @@ vim /etc/profile
    4：配置环境变量：打开控制台，运行$ sudo vi /etc/profile，在最后插入要配置的内容 ，按Esc键 ，输入( :wq 保存并退出)                                 
 
 JAVA_HOME=/home/gcs/user/java/jdk1.8.0_111
+
 PATH=$JAVA_HOME/bin:$PATH
+
 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
 export JAVA_HOME
+
 export PATH
+
 export CLASSPATH
+
    5：运行$ source /etc/profile，使配置环境生效
 
    6：运行$ java -version 看是否生效。若出现jdk版本号，则安装并配置环境变量成功
